@@ -68,11 +68,44 @@ module.exports = (grunt) ->
       options:
         livereload: true
 
+    # `grunt deploy` task
+    ## Lint HTML
+    htmllint:
+      index: "*.html"
+      blog: "*_blog/chroma/**/**/*.html"
+
+    ## Parse CSS and add vendor-prefixed CSS properties
+     autoprefixer:
+       index:
+         options:
+           browsers: ["last 2 version", "ie >= 8"]
+         src: ["stylesheets/**/*.css"]
+       blog:
+         options:
+           browsers: ["last 2 version", "ie >= 8"]
+         src: ["_blog/chroma/**/**/*.css"]
+
+    ## Lint CSS
+    csslint:
+      options:
+        "box-model": false
+        "fallback-colors": false
+      index:
+        src: ["stylesheets/**/*.css"]
+      blog:
+        src: ["_blog/chroma/**/**/*.css"]
+
   # Setting Load & Register task:
   grunt.registerTask "default", [], ->
     grunt.loadNpmTasks "grunt-contrib-connect"
     grunt.loadNpmTasks "grunt-contrib-watch"
     grunt.task.run "connect", "watch"
+
+  grunt.registerTask "deploy", [], ->
+    grunt.loadNpmTasks "grunt-html"
+    grunt.loadNpmTasks "grunt-autoprefixer"
+    grunt.loadNpmTasks "grunt-contrib-csslint"
+    grunt.task.run "htmllint", "autoprefixer", "csslint"
 
   grunt.registerTask "slim", [], ->
     grunt.loadNpmTasks "grunt-slim"
