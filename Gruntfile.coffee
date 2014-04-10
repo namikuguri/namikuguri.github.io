@@ -9,6 +9,8 @@ module.exports = (grunt) ->
     banner: "/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n" + "<%= pkg.homepage ? \"* \" + pkg.homepage + \"\\n\" : \"\" %>" + "* Copyright (c) <%= grunt.template.today(\"yyyy\") %> <%= pkg.author.name %>;" + " Licensed <%= _.pluck(pkg.licenses, \"type\").join(\", \") %> */\n"
 
     # Task configuration:
+
+    # `grunt` task
     # Reload live in the browser
     connect:
       site:
@@ -19,33 +21,49 @@ module.exports = (grunt) ->
 
     # Compile Slim to HTML
     slim:
-      dist:
+      index:
         files: [
           expand: true
           cwd: "src/"
-          src: ["{,*/}*.slim"]
+          src: ["*.slim"]
           dest: "./"
+          ext: ".html"
+        ]
+      blog:
+        files: [
+          expand: true
+          cwd: "src/_blog/chroma/"
+          src: ["**/**/*.slim"]
+          dest: "_blog/chroma/"
           ext: ".html"
         ]
 
     # Compile SCSS to CSS
     sass:
-      dist:
+      index:
         files: [
           expand: true
-          cwd: "src/assets/stylesheets/"
+          cwd: "src/stylesheets/"
           src: ["**/*.scss"]
-          dest: "assets/stylesheets/"
+          dest: "stylesheets/"
+          ext: ".css"
+        ]
+      blog:
+        files: [
+          expand: true
+          cwd: "src/_blog/chroma/"
+          src: ["**/**/*.scss"]
+          dest: "_blog/chroma/"
           ext: ".css"
         ]
 
     # Monitoring files, and Do browser live reload
     watch:
       slim:
-        files: "src/{,*/}*.slim"
+        files: ["src/{,*/}*.slim", "src/_blog/chroma/**/**/*.slim"]
         tasks: ["slim"]
       sass:
-        files: "src/assets/stylesheets/**/*.scss"
+        files: ["src/stylesheets/**/*.scss", "src/_blog/chroma/**/**/*.scss"]
         tasks: ["sass"]
       options:
         livereload: true
