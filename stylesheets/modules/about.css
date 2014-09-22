@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.about {
+  overflow: hidden;
+  padding-top: 3em;
+  padding-bottom: 6em;
+  background-color: #fff;
+}
+
+.about__image {
+  margin-bottom: 1em;
+  width: 100%;
+  height: auto;
+}
+
+.about__info {
+  margin-top: 0;
+}

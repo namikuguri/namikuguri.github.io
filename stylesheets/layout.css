@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+#header {
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7e7;
+}
+
+#main {
+  overflow: hidden;
+}
+
+#footer {
+ overflow: hidden;
+ background-color: #fff;
+ border-top: 1px solid #e5e7e7;
+}
+
+.l-container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 67.5em;
+}
+
+.l-group {
+}
+
+.l-group__narrow {
+  float: left;
+  margin-right: 3em;
+  width: 21em;
+}
+
+.l-group__wide {
+  float: left;
+  max-width: 43.5em;
+}
