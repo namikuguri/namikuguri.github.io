@@ -10,7 +10,6 @@
 .mainview__author-name {
   margin-top: 0;
   margin-bottom: 0;
-  width: 40%;
   font-size: 2.5em;
   font-weight: bold;
   color: #fff;
@@ -19,6 +18,5 @@
 .mainview__intro {
   margin-top: .25em;
   margin-bottom: .25em;
-  width: 40%;
   color: #fff;
 }
