@@ -5,7 +5,9 @@
 }
 
 .gnav__list {
+  overflow: hidden;
   display: inline-block;
+  margin-right: -1em;
   padding-left: 0;
   height: 3em;
   line-height: 3;
@@ -14,7 +16,7 @@
 
 .gnav__list li {
   display: inline;
-  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .gnav__list__link {
