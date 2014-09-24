@@ -7,26 +7,17 @@
   background-color: #f57398;
 }
 
-.mainview-bg {
-  height: 14.75em;
-  background-image: url(../../images/main.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 40%;
-}
-
 .mainview__author-name {
   margin-top: 0;
   margin-bottom: 0;
-  width: 40%;
   font-size: 2.5em;
   font-weight: bold;
   color: #fff;
+  line-height: 1.25;
 }
 
 .mainview__intro {
   margin-top: .25em;
   margin-bottom: .25em;
-  width: 40%;
   color: #fff;
 }
