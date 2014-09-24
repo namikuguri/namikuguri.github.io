@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .gnav {
-  float: right;
+  float: left;
 }
 
 .gnav__list {
@@ -9,8 +9,6 @@
   display: inline-block;
   margin-right: -1em;
   padding-left: 0;
-  height: 3em;
-  line-height: 3;
   vertical-align: middle;
 }
 
