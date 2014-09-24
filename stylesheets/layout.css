@@ -11,7 +11,8 @@
 }
 
 #footer {
- overflow: hidden;
+ padding-top: 1em;
+ padding-bottom: 1em;
  background-color: #fff;
  border-top: 1px solid #e5e7e7;
 }
