@@ -7,14 +7,6 @@
   background-color: #f57398;
 }
 
-.mainview-bg {
-  height: 14.75em;
-  background-image: url(../../images/main.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 40%;
-}
-
 .mainview__author-name {
   margin-top: 0;
   margin-bottom: 0;
