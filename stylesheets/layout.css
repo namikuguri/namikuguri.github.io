@@ -28,22 +28,22 @@
   width: 100%;
 }
 
-.l-group__narrow {
+.l-group__small {
   width: 100%;
 }
 
-.l-group__wide {
+.l-group__large {
   width: 100%;
 }
 
 @media (min-width: 42em) and (min-height: 21em) {
-  .l-group__narrow {
+  .l-group__small {
     float: left;
     margin-right: 2%;
     width: 32%;
   }
 
-  .l-group__wide {
+  .l-group__large {
     float: left;
     width: 66%;
   }
