@@ -4,13 +4,13 @@ html {
   font-size: 87.5%;
 }
 
-@media (min-width: 48em) and (min-height: 24em) {
+@media (min-width: 42em) and (min-height: 21em) {
   html {
     font-size: 100%;
   }
 }
 
-@media (min-width: 96em) and (min-height: 48em) {
+@media (min-width: 84em) and (min-height: 42em) {
   html {
     font-size: 112.5%;
   }
