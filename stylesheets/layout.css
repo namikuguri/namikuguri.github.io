@@ -39,12 +39,12 @@
 @media (min-width: 42em) and (min-height: 21em) {
   .l-group__narrow {
     float: left;
-    margin-right: 4.445%;
-    width: 31.112%;
+    margin-right: 2%;
+    width: 32%;
   }
 
   .l-group__wide {
     float: left;
-    width: 64.445%;
+    width: 66%;
   }
 }
