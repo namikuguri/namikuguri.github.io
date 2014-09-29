@@ -29,12 +29,22 @@
 }
 
 .l-group__narrow {
-  float: left;
-  margin-right: 4.445%;
-  width: 31.112%;
+  width: 100%;
 }
 
 .l-group__wide {
-  float: left;
-  width: 64.445%;
+  width: 100%;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .l-group__narrow {
+    float: left;
+    margin-right: 4.445%;
+    width: 31.112%;
+  }
+
+  .l-group__wide {
+    float: left;
+    width: 64.445%;
+  }
 }
