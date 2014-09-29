@@ -3,7 +3,7 @@
 .card {
   box-sizing: border-box;
   padding: .75em;
-  width: 21em;
+  width: 46.667%;
   background-image: linear-gradient(180deg, #fcfcfd, #f7f6f8);
   box-shadow: 0 2px 2px rgba(0,0,0, .2);
 }

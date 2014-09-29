@@ -25,15 +25,16 @@
 }
 
 .l-group {
+  width: 100%;
 }
 
 .l-group__narrow {
   float: left;
-  margin-right: 3em;
-  width: 21em;
+  margin-right: 4.445%;
+  width: 31.112%;
 }
 
 .l-group__wide {
   float: left;
-  max-width: 43.5em;
+  width: 64.445%;
 }
