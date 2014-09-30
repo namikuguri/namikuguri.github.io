@@ -7,12 +7,33 @@
   background-color: #fff;
 }
 
-.about__image {
-  margin-bottom: 1em;
-  width: 100%;
-  height: auto;
+.secondary-heading--about {
+  margin-top: 0;
 }
 
-.about__info {
-  margin-top: 0;
+.about__image {
+  display: block;
+  margin: 0 auto;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 2px solid #f78eac;
+  background-image: url(../../images/about.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.about__skills-list {
+  list-style: none;
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+
+.about__skills-list li {
+  display: inline-block;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: .25em .5em;
+  border-radius: 2px;
+  background-color: #eeefef;
 }

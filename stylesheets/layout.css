@@ -43,8 +43,14 @@
     width: 32%;
   }
 
+  .l-group__small--revert {
+    margin-left: 2%;
+    margin-right: 0;
+  }
+
   .l-group__large {
     float: left;
     width: 66%;
   }
+
 }
