@@ -1,9 +1,13 @@
 @charset "utf-8";
 
 .card {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
   padding: .75em;
   background-image: linear-gradient(180deg, #fcfcfd, #f7f6f8);
+  background-color: #fcfcfd;
   box-shadow: 0 2px 2px rgba(0,0,0, .2);
 }
 

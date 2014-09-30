@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 .btn {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -11,6 +13,7 @@
 .primary-btn {
   border: 1px solid #519bf2;
   background-image: linear-gradient(180deg, #73aff4, #519bf2);
+  background-color: #519bf2;
   font-weight: bold;
   color: #fff;
   text-align: center;
