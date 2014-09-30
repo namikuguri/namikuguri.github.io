@@ -2,7 +2,7 @@
 
 .btn {
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
   vertical-align: middle;
   text-decoration: none;
   cursor: pointer;
