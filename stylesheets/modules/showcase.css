@@ -33,5 +33,6 @@
   .showcase__pack__list li {
     float: left;
     margin-right: 2%;
+    width: 48%;
   }
 }
