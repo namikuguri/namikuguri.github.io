@@ -3,33 +3,41 @@
 .ico {
   display: inline-block;
   background-repeat: no-repeat;
-  vertical-align: top;
+}
+
+.ico {
+  width: 1em;
+  height: 1em;
+  background-image: url(../../images/ico-blank-link.png);
+  background-size: 100% 100%;
+  margin-right: .5em;
+  vertical-align: middle;
 }
 
 .ico-design {
   width: 1em;
   height: 1em;
   background-image: url(../../images/ico-design.png);
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .ico-illustration {
   width: 1em;
   height: 1em;
   background-image: url(../../images/ico-illustration.png);
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .ico-coding {
   width: 1em;
   height: 1em;
   background-image: url(../../images/ico-coding.png);
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .ico-project {
   width: 1em;
   height: 1em;
   background-image: url(../../images/ico-project.png);
-  background-size: 100%;
+  background-size: 100% 100%;
 }

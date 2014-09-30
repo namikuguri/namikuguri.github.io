@@ -13,14 +13,14 @@
 
 .about__image {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto -.25em;
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
   border: 2px solid #f78eac;
   background-image: url(../../images/about.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .about__skills-list {
