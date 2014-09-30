@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 #header {
-  overflow: hidden;
+  padding-top: .75em;
+  padding-bottom: .75em;
   background-color: #fff;
   border-bottom: 1px solid #e5e7e7;
 }
@@ -11,7 +12,8 @@
 }
 
 #footer {
- overflow: hidden;
+ padding-top: 1em;
+ padding-bottom: 1em;
  background-color: #fff;
  border-top: 1px solid #e5e7e7;
 }
@@ -19,19 +21,30 @@
 .l-container {
   margin: 0 auto;
   padding: 0 1em;
-  max-width: 67.5em;
+  max-width: 68em;
 }
 
 .l-group {
+  width: 100%;
 }
 
-.l-group__narrow {
-  float: left;
-  margin-right: 3em;
-  width: 21em;
+.l-group__small {
+  width: 100%;
 }
 
-.l-group__wide {
-  float: left;
-  max-width: 43.5em;
+.l-group__large {
+  width: 100%;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .l-group__small {
+    float: left;
+    margin-right: 2%;
+    width: 32%;
+  }
+
+  .l-group__large {
+    float: left;
+    width: 66%;
+  }
 }

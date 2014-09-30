@@ -17,13 +17,22 @@
 }
 
 .showcase__pack__list {
-  margin-right: -1.5em;
   padding-left: 0;
   list-style: none;
 }
 
 .showcase__pack__list li {
-  float: left;
-  margin-right: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 21em) and (min-height: 10.5em) {
+  .showcase__pack__list {
+    margin-right: -2%;
+  }
+
+  .showcase__pack__list li {
+    float: left;
+    margin-right: 2%;
+    width: 48%;
+  }
 }
