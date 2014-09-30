@@ -11,13 +11,13 @@
   margin-top: 0;
 }
 
-.skill-list {
+.about__skills-list {
   list-style: none;
   margin-bottom: 1em;
   padding-left: 0;
 }
 
-.skill-list li {
+.about__skills-list li {
   display: inline-block;
   margin-right: 2%;
   margin-bottom: 2%;
