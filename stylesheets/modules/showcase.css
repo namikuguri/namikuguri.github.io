@@ -16,6 +16,11 @@
   font-size: 2.5em;
 }
 
+.showcase__pack__name__image {
+  margin-top: .1em;
+  margin-right: .25em;
+}
+
 .showcase__pack__list {
   padding-left: 0;
   list-style: none;
