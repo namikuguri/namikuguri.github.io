@@ -5,6 +5,15 @@
   background-repeat: no-repeat;
 }
 
+.ico {
+  width: 1em;
+  height: 1em;
+  background-image: url(../../images/ico-blank-link.png);
+  background-size: 100% 100%;
+  margin-right: .5em;
+  vertical-align: middle;
+}
+
 .ico-design {
   width: 1em;
   height: 1em;
