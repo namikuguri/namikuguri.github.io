@@ -19,6 +19,7 @@
 .showcase__pack__name__image {
   margin-top: .1em;
   margin-right: .25em;
+  vertical-align: top;
 }
 
 .showcase__pack__list {
