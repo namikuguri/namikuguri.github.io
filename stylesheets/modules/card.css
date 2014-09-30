@@ -33,5 +33,5 @@
 
 .card__link {
   display: block;
-  text-align: right;
+  float: right;
 }
