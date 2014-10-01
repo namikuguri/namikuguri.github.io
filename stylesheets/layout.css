@@ -44,8 +44,8 @@
   }
 
   .l-group__small--revert {
-    margin-left: 2%;
     margin-right: 0;
+    margin-left: 2%;
   }
 
   .l-group__large {
