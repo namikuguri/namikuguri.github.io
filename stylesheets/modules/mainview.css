@@ -2,26 +2,36 @@
 
 .mainview {
   padding-top: 3em;
-  padding-bottom: 3em;
-  background-image: radial-gradient(at top, #f78eac, #f57398);
-  background-color: #f57398;
+  background-image: radial-gradient(at top, #e7fef8, #e2fef6);
+  background-color: #e2fef6;
 }
 
-.mainview__site-name {
+.mainview__site-intro {
+  text-align: center;
+}
+
+.mainview__site-intro__title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 2.5em;
   font-weight: bold;
-  color: #fff;
   line-height: 1.25;
 }
 
-.mainview__intro {
+.mainview__site-intro__desc {
   margin-top: .25em;
   margin-bottom: .25em;
-  color: #fff;
 }
 
 .mainview__intro__link {
-  color: #fff;
+  color: #313a38;
+}
+
+.mainview__image {
+  margin-top: 3em;
+  height: 18em;
+  background-image: url(../../images/mainview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
