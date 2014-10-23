@@ -34,9 +34,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
-  text-align: left;
-  text-shadow: 0 1px 0 rgba(0,0,0, .2);
   color: #fff; 
+  text-align: left;
+  text-shadow: 0 0 2px #A8D0CD,
+               0 0 4px #A8D0CD,
+               0 1px 0 rgba(0,0,0, .2);
 }
 
 .mainview__site-intro__title {
