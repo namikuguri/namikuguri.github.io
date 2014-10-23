@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 .mainview {
+  padding-top: 3.5em;
   overflow: hidden;
   border-bottom: 1px solid #e5e7e7;
   background-image:  radial-gradient(at top, rgba(255,255,255, .5), rgba(0,0,0, .1)), url(../../images/mainview-bg.png);

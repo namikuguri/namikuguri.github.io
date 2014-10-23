@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 #header {
+  position: fixed;
   padding-top: .75em;
   padding-bottom: .75em;
-  background-color: #fff;
+  width: 100%;
+  background-color: rgba(255,255,255,.8);
   border-bottom: 1px solid #e5e7e7;
 }
 
