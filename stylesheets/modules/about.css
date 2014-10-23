@@ -18,9 +18,6 @@
   height: 1.25em;
   border-radius: 50%;
   border: 2px solid #f78eac;
-  background-image: url(../../images/about.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .about__skills-list {
