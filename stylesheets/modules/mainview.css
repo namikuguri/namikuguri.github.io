@@ -1,13 +1,41 @@
 @charset "utf-8";
 
 .mainview {
-  padding-top: 3em;
-  background-image: radial-gradient(at top, #e7fef8, #e2fef6);
-  background-color: #e2fef6;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e7e7;
+  background-image:  radial-gradient(at top, rgba(255,255,255, .5), rgba(0,0,0, .1)), url(../../images/mainview-bg.png);
+  background-color: #b9d9d8;
+}
+
+.mainview__starry-night {
+  background-image: radial-gradient(rgba(255,255,255, .6), rgba(255,255,255, .2) 2px, transparent 40px),
+                    radial-gradient(rgba(255,255,255, .6), rgba(255,255,255, .15) 1px, transparent 30px),
+                    radial-gradient(rgba(255,255,255, .6), rgba(255,255,255,.1) 2px, transparent 40px),
+                    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px),
+                    radial-gradient(rgba(255,255,255, .6), rgba(255,255,255,.1) 2px, transparent 40px);
+  background-size: 600px 300px,
+                   400px 300px,
+                   300px 200px,
+                   200px 100px,
+                   300px 200px;
+  background-position: 40px 50px,
+                       40px 60px,
+                       130px 270px,
+                       60px 100px,
+                       -30px -70px;
 }
 
 .mainview__site-intro {
-  text-align: center;
+  margin-top: 1em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-image: url(../../images/mainview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(0,0,0, .2);
+  color: #fff; 
 }
 
 .mainview__site-intro__title {
@@ -23,15 +51,6 @@
   margin-bottom: .25em;
 }
 
-.mainview__intro__link {
-  color: #313a38;
-}
-
-.mainview__image {
-  margin-top: 3em;
-  height: 18em;
-  background-image: url(../../images/mainview.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+.mainview__site-intro__link {
+  color: #fff; 
 }
