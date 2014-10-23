@@ -13,9 +13,9 @@
 
 .about__image {
   display: block;
-  margin: 0 auto -.25em;
-  width: 1.5em;
-  height: 1.5em;
+  margin: 0 auto;
+  width: 1.25em;
+  height: 1.25em;
   border-radius: 50%;
   border: 2px solid #f78eac;
   background-image: url(../../images/about.png);
