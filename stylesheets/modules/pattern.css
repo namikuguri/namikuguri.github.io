@@ -1,0 +1,17 @@
+.pattern__starry-night {
+  background-image: radial-gradient(rgba(255,255,255, .4), rgba(255,255,255, 0) 4px),
+                    radial-gradient(rgba(255,255,255, .4), rgba(255,255,255, 0) 4px),
+                    radial-gradient(rgba(255,255,255, .4), rgba(255,255,255, 0) 4px),
+                    radial-gradient(rgba(255,255,255,.2),  rgba(255,255,255, 0) 4px),
+                    radial-gradient(rgba(255,255,255, .4),  rgba(255,255,255, 0) 4px);
+  background-size: 600px 365px,
+                   400px 300px,
+                   300px 200px,
+                   200px 100px,
+                   300px 200px;
+  background-position: 0 0,
+                       40px 60px,
+                       130px 270px,
+                       60px 100px,
+                       -30px -70px;
+}

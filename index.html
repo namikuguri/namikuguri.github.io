@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>thleap - Web Designer & CSS Lover</title>
-  <meta name="description" content="Web Designer として活動する @thleap の作品をまとめたサイトです。">
-  <meta name="keywords" content="thleap, design, css">
+  <title>thleap - Webデザイナー</title>
+  <meta name="description" content="Webデザイナー として活動する @thleap の作品をまとめたサイトです。">
+  <meta name="keywords" content="thleap, Webデザイナー, design, css">
   <link rel="shortcut icon" href="images/logo.png">
   <link rel="stylesheet" href="stylesheets/element.css">
   <link rel="stylesheet" href="stylesheets/layout.css">
@@ -19,12 +19,13 @@
   <link rel="stylesheet" href="stylesheets/modules/site.css">
   <link rel="stylesheet" href="stylesheets/modules/mainview.css">
   <link rel="stylesheet" href="stylesheets/modules/showcase.css">
+  <link rel="stylesheet" href="stylesheets/modules/pattern.css">
   <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 </head>
 <body>
   <header id="header" role="banner">
     <div class="l-container clearfix">
-      <h1 class="logo">thleap</h1>
+      <a href="/"><h1 class="logo"><span class="logo__image"></span>thleap</h1></a>
       <nav class="gnav" role="navigation">
         <ul class="gnav__list">
           <li><a href="#design" class="gnav__list__link">Design</a></li>
@@ -37,13 +38,14 @@
     </div>
   </header>
   <div class="mainview">
-    <div class="l-container">
-      <div class="mainview__site-intro">
-        <p class="mainview__site-intro__title">thleap's Showcase</p>
-        <p class="mainview__site-intro__desc">ようこそ。ここは Web Designer として活動する <a href="#about" class="mainview__intro__link">@thleap</a> の作品をまとめたサイトです。</p>
+    <div class="pattern__starry-night">
+      <div class="l-container">
+        <div class="mainview__site-intro">
+          <p class="mainview__site-intro__title">thleap's Showcase</p>
+          <p class="mainview__site-intro__desc">ようこそ。ここは Webデザイナー として活動する <a href="#about" class="mainview__site-intro__link">@thleap</a> の作品をまとめたサイトです。</p>
+        </div>
       </div>
     </div>
-    <div class="mainview__image"></div>
   </div>
   <main id="main" role="main">
     <div class="showcase">
@@ -191,11 +193,11 @@
     <div id="about" class="about">
       <div class="l-container">
         <section>
-          <h1 class="primary-heading primary-heading--cross"><span class="about__image"></span>About</h1>
+          <h1 class="primary-heading primary-heading--cross"><img src="images/about.png" alt="サイト製作者の顔写真" class="about__image">About</h1>
           <div class="l-group">
             <div class="l-group__large">
               <h2 class="secondary-heading secondary-heading--about">自己紹介</h2>
-              <p>2011年から Web Designer として活動しています。普段はサービスの企画段階から加わってデザインを作り、それをコーディングに落とすところまでやっています。</p>
+              <p>2011年から Webデザイナーとして活動しています。普段はサービスの企画段階から加わってデザインを作り、それをコーディングに落とすところまでやっています。</p>
               <p>デザインに関しては人の目を惹くグラフィックを作ることも重要だと考えていますが、パソコンや携帯のように利用者が何かを操作する媒体では、順路がわかりやすい設計や機能の快適な使い心地を考えることがより重要だと思っています。</p>
               <p>扱うスキルや使用しているサービス、趣味の麻雀などについて<a href="http://chroma.hatenablog.com/">ブログ</a>を書いているのでよければ覗いてみてください。おそらく僕が Web で一番活動している場がここになります。</p>
             </div>
@@ -227,5 +229,7 @@
       <address class="copyright">@2014 thleap</address>
     </div>
   </footer>
+  <script rel="javascript" src="javascripts/vendor/jquery-2.1.1.min.js"></script>
+  <script rel="javascript" src="javascripts/smoothScroll.js"></script>
 </body>
 </html>
