@@ -22,7 +22,6 @@
   background-size: contain;
   background-position: right bottom;
   color: #fff; 
-  text-align: left;
   text-shadow: 0 0 1px #649694,
                0 0 2px #b9d9d8,
                0 0 3px #b9d9d8,
@@ -40,6 +39,7 @@
 .mainview__site-intro__desc {
   margin-top: .25em;
   margin-bottom: .25em;
+  font-weight: bold;
 }
 
 .mainview__site-intro__link {
