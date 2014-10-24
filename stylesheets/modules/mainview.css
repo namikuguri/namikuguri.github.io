@@ -1,11 +1,16 @@
 @charset "utf-8";
 
 .mainview {
-  padding-top: 3.5em;
   overflow: hidden;
   border-bottom: 1px solid #e5e7e7;
   background-image: radial-gradient(at top, rgba(255,255,255, .25) 25%, rgba(185,225,200, .8)), url(../../images/mainview-bg.png);
   background-color: #b9d9d8;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .mainview {
+    padding-top: 3.5em;
+  }
 }
 
 .mainview__starry-night {

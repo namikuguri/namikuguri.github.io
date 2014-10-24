@@ -1,12 +1,19 @@
 @charset "utf-8";
 
 #header {
-  position: fixed;
+  position: static;
   padding-top: 1em;
   padding-bottom: .75em;
-  width: 100%;
-  background-color: rgba(255,255,255,.8);
+  background-color: #fff;
   border-bottom: 1px solid #e5e7e7;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  #header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,.8);
+  }
 }
 
 #main {
