@@ -23,8 +23,6 @@
   text-decoration: none;
 }
 
-/* State */
-.is-gnav__list__link--current {
-  border-bottom: 2px solid #559DEF;
-  padding-bottom: .25em;
+.gnav__list__link:hover {
+  text-decoration: underline;
 }
