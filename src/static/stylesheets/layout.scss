@@ -1,0 +1,66 @@
+#header {
+  height: $xxxx-large - $xx-large;
+  margin-bottom: $xx-large;
+  background-color: $white;
+}
+
+#footer {
+  margin-top: $xxx-large;
+  padding: $medium 0;
+  background-color: $white;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  #footer {
+    margin-top: $xxxx-large;
+  }
+}
+
+.l-container {
+  margin: 0 auto;
+  padding: 0 $medium;
+  max-width: $container;
+}
+
+.l-partition {
+  position: static;
+  padding-left: 0;
+}
+
+.l-partition-sub {
+  position: static;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .l-partition {
+    position: relative;
+    padding-left: $container-col-1;
+  }
+
+  .l-partition-sub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $container-col-1-inner;
+  }
+}
+
+.l-grid {
+  li {
+    margin-bottom: $x-large;
+  }
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .l-grid {
+    overflow: hidden;
+    li {
+      float: left;
+      margin-right: $container-space-half;
+      width: $container-col-1;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+  }
+}

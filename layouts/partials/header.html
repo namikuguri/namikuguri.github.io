@@ -1,0 +1,23 @@
+<header id="header" class="header">
+  <div class="l-container clearfix">
+    <div class="header-logo">
+      <a href="/" class="site-logo"></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="site-nav">
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.global }}
+          {{ $atTopLevel := $currentNode.IsMenuCurrent "global" . }}
+          {{ $inScope := ( $currentNode.HasMenuCurrent "global" . ) }}
+          <li>
+            {{ if or $atTopLevel $inScope }}
+              <a href="{{ .Url }}" class="site-link is-active">{{ .Name }}</a>
+            {{ else }}
+              <a href="{{ .Url }}" class="site-link">{{ .Name }}</a>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

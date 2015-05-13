@@ -1,0 +1,88 @@
+/* site */
+.site-link {
+  display: inline-block;
+  color: $black;
+  &::after {
+    content: "";
+    display: block;
+    margin-top: $xx-small;
+    width: 0%; // Here, Do not forget the units for iOS8 Safari
+    height: 1px;
+    background-color: $black;
+    transition: width .5s ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.site-link.is-active {
+  &::after {
+    background-color: $red;
+    width: 100%;
+  }
+}
+
+.site-logo {
+  display: inline-block;
+  width: 6.125em;
+  height: 2.75em;
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  &::after {
+    content: normal;
+    width: 0;
+  }
+}
+
+.site-nav {
+  @include font-sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.site-nav li {
+  display: inline-block;
+  margin-left: $medium;
+  white-space: nowrap;
+}
+
+@media (min-width: 42em) and (min-height: 21em) {
+  .site-nav li {
+    margin-left: $x-large;
+  }
+}
+
+.site-byline {
+  @include font-sans-serif;
+  font-size: $small;
+  text-align: right;
+  &::before {
+    content: "/";
+    display: inline-block;
+    margin-top: -4px;
+    margin-right: $xx-small;
+    font-size: $xx-large;
+    color: $red;
+    line-height: 1;
+    vertical-align: middle;
+  }
+}
+
+.site-author {
+}
+
+.site-license {
+  &::before {
+    content: "/";
+    margin: 0 $medium;
+    color: $gray;
+  }
+}
+
+.site-message {
+  margin: $xxxx-large 0;
+  text-align: center;
+}

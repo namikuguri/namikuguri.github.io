@@ -1,0 +1,17 @@
+@mixin font-serif {
+  font-family: "ヒラギノ明朝 ProN" , "HiraMinProN", "游明朝体", "Yu Mincho", serif;
+
+}
+
+@mixin font-sans-serif {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+@mixin font-script {
+  font-family: "Dancing Script", Times, serif;
+}
+
+@mixin font-mono {
+  font-family: courier, monospace;
+}

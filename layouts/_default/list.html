@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{ partial "meta.html" . }}
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">{{ .Title }}</h1>
+        <div class="metas metas-border">
+          <span class="metas-item">{{ .Site.Title }}</span>
+        </div>
+      </div>
+
+      <ul class="posts">
+        {{ range .Paginator.Pages }}
+          <li class="posts-item l-partition">
+            <h2 class="posts-item-title">
+              <a href="{{ .RelPermalink }}" class="posts-item-title-link">{{ .Title }}</a>
+            </h2>
+            <div class="metas l-partition-sub">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="metas-item">{{ .Date.Format "2006.01.02" }}</time>
+              <span class="metas-item">{{ .Params.tags }}</span>
+            </div>
+            <p class="posts-item-description">{{ .Description }}</p>
+          </li>
+        {{ end }}
+      </ul>
+
+      <div class="footline">
+        {{ partial "pagination.html" . }}
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

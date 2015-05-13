@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{ partial "meta.html" . }}
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">{{ .Title }}</h1>
+        <div class="metas metas-border">
+          {{ if eq .Slug "about" }}
+            <span class="metas-item">About</span>
+          {{ else }}
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="metas-item">{{ .Date.Format "2006.01.02" }}</time>
+            {{ with .Params.categories }}
+              <span class="metas-item">{{ . }}</span>
+            {{ else }}
+              <span class="metas-item">{{ .Params.tags }}</span>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="l-partition post">
+        <div class="l-partition-sub">
+          {{ with .Params.work_description }}
+            <p class="work-description">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.work_url }}
+            <dl class="work-url">
+              <dt>URL</dt>
+              <dd>
+                <a href="{{ . }}">{{ . }}</a>
+              </dd>
+            </dl>
+          {{ end }}
+        </div>
+        {{ .Content }}
+      </div>
+
+      <div class="footline">
+        <ul class="pagination">
+          {{ with .PrevInSection }}
+            <li class="pagination-prev">
+              <a href="{{ .Permalink }}">
+                <i class="icon ico-arrow-prev pagination-prev-icon"></i>Prev
+              </a>
+            </li>
+          {{ end }}
+          {{ with .NextInSection }}
+            <li class="pagination-next">
+              <a href="{{ .Permalink }}">
+                Next<i class="icon ico-arrow-next pagination-next-icon"></i>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+  </body>
+</html>
