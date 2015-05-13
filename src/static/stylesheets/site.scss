@@ -1,4 +1,28 @@
 /* site */
+.site-link {
+  display: inline-block;
+  color: $black;
+  &::after {
+    content: "";
+    display: block;
+    margin-top: $xx-small;
+    width: 0%; // Here, Do not forget the units for iOS8 Safari
+    height: 1px;
+    background-color: $black;
+    transition: width .5s ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.site-link.is-active {
+  &::after {
+    background-color: $red;
+    width: 100%;
+  }
+}
+
 .site-logo {
   display: inline-block;
   width: 6.125em;
@@ -28,30 +52,6 @@
 @media (min-width: 42em) and (min-height: 21em) {
   .site-nav li {
     margin-left: $x-large;
-  }
-}
-
-.site-nav-link {
-  display: inline-block;
-  color: $black;
-  &::after {
-    content: "";
-    display: block;
-    margin-top: $xx-small;
-    width: 0%; // Here, Do not forget the units for iOS8 Safari
-    height: 1px;
-    background-color: $black;
-    transition: width .5s ease;
-  }
-  &:hover::after {
-    width: 100%;
-  }
-}
-
-.site-nav-link.is-active {
-  &::after {
-    background-color: $red;
-    width: 100%;
   }
 }
 

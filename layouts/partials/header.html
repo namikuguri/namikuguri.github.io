@@ -11,9 +11,9 @@
           {{ $inScope := ( $currentNode.HasMenuCurrent "global" . ) }}
           <li>
             {{ if or $atTopLevel $inScope }}
-              <a href="{{ .Url }}" class="site-nav-link is-active">{{ .Name }}</a>
+              <a href="{{ .Url }}" class="site-link is-active">{{ .Name }}</a>
             {{ else }}
-              <a href="{{ .Url }}" class="site-nav-link">{{ .Name }}</a>
+              <a href="{{ .Url }}" class="site-link">{{ .Name }}</a>
             {{ end }}
           </li>
         {{ end }}
