@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{ partial "meta.html" . }}
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <main class="l-container">
+      <div class="headline">
+        <h1 class="headline-heading">出来上がったモノ</h1>
+        <div class="metas metas-border">
+          <span class="metas-item">Work</span>
+        </div>
+      </div>
+
+      <ul class="l-grid posts">
+        {{ range .Paginator.Pages }}
+          <li class="posts-item">
+            <a href="{{ .RelPermalink }}" class="posts-item-image">
+              <img src="{{ .Params.thumb }}" alt="{{ .Description }}">
+            </a>
+            <h2 class="posts-item-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="metas">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="metas-item">{{ .Date.Format "2006.01.02" }}</time>
+              <span class="metas-item">{{ .Params.categories }}</span>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+
+      <div class="footline">
+        {{ partial "pagination.html" . }}
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

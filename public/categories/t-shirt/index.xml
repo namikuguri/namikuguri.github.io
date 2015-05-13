@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>T Shirt on thleap.net</title>
+    <link>http://localhost:1313/categories/t-shirt/</link>
+    <description>Recent content in T Shirt on thleap.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 13 May 2015 20:09:01 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/t-shirt/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>vespa</title>
+      <link>http://localhost:1313/work/vespa/</link>
+      <pubDate>Wed, 13 May 2015 20:09:01 +0900</pubDate>
+      
+      <guid>http://localhost:1313/work/vespa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

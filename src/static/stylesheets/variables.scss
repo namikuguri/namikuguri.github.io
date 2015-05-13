@@ -1,0 +1,28 @@
+/* color */
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 84%);
+$lightGray: hsl(0, 0%, 92%);
+$white: hsl(0, 0%, 100%);
+$red: hsl(350, 92%, 52%);
+
+/* line-height */
+$lh: 1.6;
+$lh-small: 1.25;
+
+/* size */
+$medium: 1em;
+$large: $medium * 1.5;
+$x-large: $medium * 2;
+$xx-large: $medium * 3;
+$xxx-large: $medium * 6;
+$xxxx-large: $medium * 10;
+$small: $medium * .75;
+$x-small: $medium * .5;
+$xx-small: $medium * .25;
+
+$container: 60em;
+$container-col-1: 32.5%;
+$container-col-2: 100% - $container-col-1;
+$container-space: $container-col-2 -  ($container-col-1 * 2);
+$container-space-half: $container-space / 2;
+$container-col-1-inner: $container-col-1 - $container-space;

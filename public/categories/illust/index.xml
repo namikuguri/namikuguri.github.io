@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Illust on thleap.net</title>
+    <link>http://localhost:1313/categories/illust/</link>
+    <description>Recent content in Illust on thleap.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 13 May 2015 20:09:01 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/illust/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vespa</title>
+      <link>http://localhost:1313/work/vespa/</link>
+      <pubDate>Wed, 13 May 2015 20:09:01 +0900</pubDate>
+      
+      <guid>http://localhost:1313/work/vespa/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/work/vespa/illust.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/work/vespa/illust02.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/work/vespa/illust03.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
