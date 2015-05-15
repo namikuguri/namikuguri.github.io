@@ -32,8 +32,7 @@ img {
 
 /* modules */
 .table {
-  margin: 6em 0;
-  padding: 0 2em;
+  padding: 3em 2em;
   display: block;
 }
 
@@ -52,6 +51,7 @@ img {
 .table-card {
   display: block;
   text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255, .15);
 }
 
 @media (min-width: 42em) and (min-height: 21em) {
@@ -67,7 +67,7 @@ img {
   display: block;
   width: 100%;
   border-top: 1px dotted rgba(0,0,0, .8);
-  border-bottom: 1px dotted rgba(255,255,255, .2);
+  border-bottom: 1px dotted rgba(255,255,255, .15);
 }
 
 @media (min-width: 42em) and (min-height: 21em) {
@@ -84,7 +84,7 @@ img {
     border-top-width: 0;
     border-bottom-width: 0;
     border-left: 1px dotted rgba(0,0,0, .8);
-    border-right: 1px dotted rgba(255,255,255, .2);
+    border-right: 1px dotted rgba(255,255,255, .15);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
@@ -124,6 +124,7 @@ img {
   border-radius: 2px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  box-shadow: 1px 1px 0 rgba(255,255,255, .15);
 }
 
 .diamond-image-item {
