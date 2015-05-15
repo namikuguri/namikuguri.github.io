@@ -39,6 +39,7 @@ img {
 @media (min-width: 42em) and (min-height: 21em) {
   .table {
     margin: 0 auto;
+    padding: 0;
     width: 100%;
     max-width: 80em;
     height: 100%;
