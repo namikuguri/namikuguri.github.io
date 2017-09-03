@@ -1,9 +1,12 @@
 /* elements */
 html {
-  font-family: helvetica, verdana, sans-serif;
-  font-size: 100%;
-  color: black;
-  line-height: 1.25;
+  font-size: 87.5%;
+}
+
+@media (min-height: 21em) and (min-width: 42em) {
+  html {
+    font-size: 100%;
+  }
 }
 
 html,
@@ -14,16 +17,19 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background-image: url(images/ptr-fablic.png);
-  background-repeat: repeat;
+  background-color: blue;
+  font-family: -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", "Segoe UI", "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;;
+  color: white;
+  line-height: 1.25;
 }
 
 a {
-  color: black;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 img {
@@ -31,106 +37,100 @@ img {
 }
 
 /* modules */
-.table {
-  padding: 3em 2em;
-  display: block;
+.bg {
+  background-image: url(images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  animation-name: animation-bg;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-@media (min-width: 42em) and (min-height: 21em) {
-  .table {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    max-width: 80em;
-    height: 100%;
-    display: table;
-    table-layout: fixed;
-  }
-}
-
-.table-card {
-  display: block;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255, .15);
-}
-
-@media (min-width: 42em) and (min-height: 21em) {
-  .table-card {
-    display: table-cell;
-    width: 50%;
-    vertical-align: middle;
-  }
-}
-
-.table-card-with-separation::after {
-  content: "";
-  display: block;
+.container {
+  position: relative;
+  padding: 1rem;
   width: 100%;
-  border-top: 1px dotted rgba(0,0,0, .8);
-  border-bottom: 1px dotted rgba(255,255,255, .15);
+  height: 100%;
+  box-sizing: border-box;
 }
 
-@media (min-width: 42em) and (min-height: 21em) {
-  .table-card-with-separation {
-    position: relative;
-  }
-  
-  .table-card-with-separation::after {
-    position: absolute;
-    top: 10%;
-    right: 0;
-    width: 0;
-    height: 80%;
-    border-top-width: 0;
-    border-bottom-width: 0;
-    border-left: 1px dotted rgba(0,0,0, .8);
-    border-right: 1px dotted rgba(255,255,255, .15);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 4rem; /* TODO: .work が増えたら値を調整する。いつかちゃんと CSS 書く。 */
+  left: 0;
+  margin: auto;
+  width: 8rem;
+  height: 8rem;
+  fill: white;
+}
+
+@media (min-height: 21em) and (min-width: 42em) {
+  .logo {
+    bottom: 0;
   }
 }
 
 .title {
-  font-size: 2em;
-  margin-bottom: .25em;
-}
-
-.diamond-image + .title {
-  margin-top: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
 }
 
 .desc {
-  margin-top: .5em;
+  margin-top: .25rem;
+  margin-bottom: 0;
+  text-indent: 1.8rem;
 }
 
-.list {
-  display: inline-block;
+.work {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-.list li {
-  margin-bottom: .25em;
-  text-align: left;
-}
-
-.diamond-image {
-  overflow: hidden;
+.work li {
   display: inline-block;
-  width: 6em;
-  height: 6em;
-  border: 4px solid black;
-  border-radius: 2px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  box-shadow: 1px 1px 0 rgba(255,255,255, .15);
+  margin: .25rem;
 }
 
-.diamond-image-item {
-  margin: -25%;
-  width: 150%;
-  height: auto;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.work li:before {
+  content: "/";
+  display: inline-block;
+  margin-right: .5rem;
+  margin-bottom: .25rem;
+}
+
+.work li:first-child:before {
+  content: none;
+}
+
+@media (min-height: 21em) and (min-width: 42em) {
+  .work li {
+    display: block;
+    margin-bottom: .25rem;
+    text-align: right;
+  }
+  .work li:before {
+    content: none;
+  }
+}
+
+@-webkit-keyframes animation-bg {
+  0% {
+    background-color: lightblue;
+  }
+  25% {
+    background-color: blue;
+  }
 }
