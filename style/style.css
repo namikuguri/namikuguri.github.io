@@ -292,7 +292,13 @@ small {
 
 .card--mini .card__text__title {
   margin-top: 0;
+  margin-bottom: var(--quarterSize);
   font-size: var(--baseSize);
+}
+
+.card--mini .card__text__description,
+.card--mini .card__text__meta {
+  margin: var(--quarterSize) 0;
 }
 
 .card--mini .card__text__description,
