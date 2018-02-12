@@ -222,6 +222,17 @@ small {
   line-height: var(--lineHeightSmall);
 }
 
+.card--link {
+  color: inherit;
+  cursor: pointer;
+}
+
+.card--link:hover,
+.card--link:active,
+.card--link:visited {
+  text-decoration: none;
+}
+
 .card__thumb {
   display: flex;
   align-items: center;
@@ -294,9 +305,18 @@ small {
 }
 
 .banner {
+  display: block;
   padding: var(--baseSize);
   background-color: var(--bannerBGColor);
   line-height: var(--lineHeightSmall);
+  color: inherit;
+  cursor: pointer;
+}
+
+.banner:hover,
+.banner:active,
+.banner:visited {
+  text-decoration: none;
 }
 
 .banner__thumb {
@@ -327,14 +347,15 @@ small {
   font-size: var(--sizeSmall);
 }
 
-.banner__text__link {
+.banner__text__action {
   display: flex;
   align-items: center;
+  margin: 0;
   font-size: var(--sizeSmall);
   color: var(--white);
 }
 
-.banner__text__link__icon {
+.banner__text__action__icon {
   margin-left: var(--quarterSize);
   width: var(--sizeSmall);
   height: var(--sizeSmall);
