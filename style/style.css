@@ -215,7 +215,7 @@ small {
 }
 
 .showcase li + li {
-  margin: var(--baseSize) 0;
+  margin: var(--sizeXLarge) 0;
 }
 
 .card {
@@ -234,6 +234,7 @@ small {
 }
 
 .card__thumb {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
