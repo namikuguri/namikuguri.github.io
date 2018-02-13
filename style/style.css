@@ -290,14 +290,16 @@ small {
 }
 
 .card--large .card__text__title {
-  margin: var(--halfSize) 0;
+  margin-top: var(--halfSize);
   font-size: var(--sizeLarge);
 }
 
 @media screen and (min-width: 44rem) {
-  .card__text__title,
+  .card__text__title {
+    margin-top: var(--halfSize);
+  }
+
   .card--large .card__text__title {
-    margin: var(--halfSize) 0;
     font-size: var(--baseSize);
   }
 }
@@ -309,12 +311,11 @@ small {
 }
 
 .card--large .card__text__description {
-  margin: var(--halfSize) 0;
+  font-size: var(--baseSize);
 }
 
 @media screen and (min-width: 44rem) {
   .card__text__description {
-    margin: var(--halfSize) 0;
     font-size: var(--baseSize);
   }
 }
@@ -324,16 +325,6 @@ small {
   align-items: center;
   margin: var(--quarterSize) 0;
   color: var(--gray);
-}
-
-.card--large .card__text__meta {
-  margin: var(--halfSize) 0;
-}
-
-@media screen and (min-width: 44rem) {
-  .card__text__meta {
-    margin: var(--halfSize) 0;
-  }
 }
 
 .card__text__meta__item {
