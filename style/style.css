@@ -219,17 +219,14 @@ small {
 }
 
 .card {
-  line-height: var(--lineHeightSmall);
-}
-
-.card--link {
   color: inherit;
+  line-height: var(--lineHeightSmall);
   cursor: pointer;
 }
 
-.card--link:hover,
-.card--link:active,
-.card--link:visited {
+.card:hover,
+.card:active,
+.card:visited {
   text-decoration: none;
 }
 
