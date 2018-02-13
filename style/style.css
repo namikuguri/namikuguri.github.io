@@ -295,9 +295,10 @@ small {
 }
 
 @media screen and (min-width: 44rem) {
-  .card__text__title {
+  .card__text__title,
+  .card--large .card__text__title {
     margin: var(--halfSize) 0;
-    font-size: var(--sizeLarge);
+    font-size: var(--baseSize);
   }
 }
 
