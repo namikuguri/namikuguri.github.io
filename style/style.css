@@ -314,6 +314,7 @@ small {
 @media screen and (min-width: 44rem) {
   .card__text__description {
     margin: var(--halfSize) 0;
+    font-size: var(--baseSize);
   }
 }
 
