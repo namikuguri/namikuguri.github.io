@@ -251,10 +251,10 @@ small {
 }
 
 .card__thumb {
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   margin-right: var(--baseSize);
   width: 50%;
   height: calc(50% * var(--ratio));
@@ -375,6 +375,12 @@ small {
   cursor: pointer;
 }
 
+@media screen and (min-width: 44rem) {
+  .banner {
+    display: flex;
+  }
+}
+
 .banner:hover,
 .banner:active,
 .banner:visited {
@@ -385,28 +391,56 @@ small {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   height: calc(100vw * var(--negativeRatio));
   overflow: hidden;
 }
 
+@media screen and (min-width: 44rem) {
+  .banner__thumb {
+    width: 12rem;
+    height: 100%;
+  }
+}
+
 .banner__thumb__image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .banner__text {
   color: var(--white);
 }
 
-.banner__text :not(:last-child) {
-  margin: var(--halfSize) 0;
+@media screen and (min-width: 44rem) {
+  .banner__text {
+    margin-left: var(--baseSize);
+  }
 }
 
 .banner__text__title {
+  margin: var(--halfSize) 0;
   font-size: var(--sizeLarge);
 }
 
+@media screen and (min-width: 44rem) {
+  .banner__text__title {
+    margin-top: 0;
+    font-size: var(--sizeLarge);
+  }
+}
+
 .banner__text__description {
+  margin: var(--halfSize) 0;
   font-size: var(--sizeSmall);
+}
+
+@media screen and (min-width: 44rem) {
+  .banner__text__description {
+    margin: var(--halfSize) 0;
+    font-size: var(--baseSize);
+  }
 }
 
 .banner__text__action {
@@ -415,6 +449,12 @@ small {
   margin: 0;
   font-size: var(--sizeSmall);
   color: var(--white);
+}
+
+@media screen and (min-width: 44rem) {
+  .banner__text__action {
+    font-size: var(--baseSize);
+  }
 }
 
 .banner__text__action__icon {
