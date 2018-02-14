@@ -254,6 +254,8 @@ small {
   color: inherit;
   line-height: var(--lineHeightSmall);
   cursor: pointer;
+  animation: fadeIn .6s ease-in;
+  -webkit-animation: fadeIn .6s ease-in;
 }
 
 .card:hover,
@@ -270,6 +272,16 @@ small {
   .card {
     display: block;
   }
+
+  .card:hover {
+    margin: calc(var(--halfSize) * -1);
+    padding: var(--halfSize);
+    border-radius: 8px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, .15);
+    cursor: pointer;
+    transition: .2s;
+    transition-timing-function: ease-in;
+  }
 }
 
 .card__thumb {
@@ -280,6 +292,7 @@ small {
   margin-right: var(--baseSize);
   width: 50%;
   height: calc(50% * var(--ratio));
+  border-radius: 4px;
   background-color: var(--whiteSmoke);
   overflow: hidden;
 }
@@ -494,4 +507,28 @@ small {
 
 .byline__link {
   color: inherit;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(var(--baseSize));
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: translateY(var(--baseSize));
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
 }
