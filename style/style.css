@@ -21,6 +21,7 @@
   --sizeLarge: calc(var(--baseSize) * 1.5);
   --sizeXLarge: calc(var(--baseSize) * 2);
   --sizeXXLarge: calc(var(--baseSize) * 3);
+  --contentSize: calc(var(--baseSize) * 64);
 
   /* Ratio */
   --ratio: .618;
@@ -101,7 +102,7 @@ small {
 }
 
 #main {
-  max-width: 64rem;
+  max-width: var(--contentSize);
   margin: 0 auto;
   padding: 0 var(--baseSize);
 }
@@ -161,11 +162,22 @@ small {
   margin: 0 calc(var(--baseSize) * -1) var(--sizeLarge);
   padding: var(--sizeXLarge) var(--baseSize);
 }
+@media screen and (min-width: 44rem) {
+  .hero {
+    padding: calc(var(--baseSize) * 6) var(--baseSize);
+    text-align: center;
+  }
+}
 
 .hero__message {
   margin: 0;
 }
 
+@media screen and (min-width: 44rem) {
+  .hero__message {
+    font-size: var(--sizeXXLarge);
+  }
+}
 .hero__message__punctuation {
   visibility: hidden;
 }
@@ -173,6 +185,16 @@ small {
 .hero__message__punctuation::after {
   content: "\A";
   white-space: pre;
+}
+
+@media screen and (min-width: 44rem) {
+  .hero__message__punctuation {
+    visibility: visible;
+  }
+
+  .hero__message__punctuation::after {
+    content: "";
+  }
 }
 
 .filter {
@@ -221,7 +243,7 @@ small {
 @media screen and (min-width: 44rem) {
   .showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--baseSize) * 20), 1fr));
     grid-column-gap: var(--sizeXLarge);
     grid-row-gap: var(--sizeXLarge);
   }
@@ -398,7 +420,7 @@ small {
 
 @media screen and (min-width: 44rem) {
   .banner__thumb {
-    width: 12rem;
+    width: calc(var(--baseSize) * 12);
     height: 100%;
   }
 }
