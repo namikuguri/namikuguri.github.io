@@ -52,6 +52,12 @@ html {
   line-height: var(--lineHeight);
 }
 
+@media screen and (min-width: 64rem) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
 body {
   background-color: var(--white);
   color: var(--black);
@@ -132,9 +138,15 @@ small {
 /* MODULE */
 .pageTitle {
   margin: 0 var(--baseSize);
-  font-size: var(--baseSize);
+  font-size: var(--sizeSmall);
   font-weight: var(--fontWeightNormal);
   color: var(--gray);
+}
+
+@media screen and (min-width: 44rem) {
+  .pageTitle {
+    font-size: var(--baseSize);
+  }
 }
 
 .iconButton {
@@ -220,7 +232,13 @@ small {
   margin-top: var(--halfSize);
   margin-bottom: 0;
   color: var(--gray);
-  font-size: var(--sizeLarge);
+  font-size: var(--baseSize);
+}
+
+@media screen and (min-width: 44rem) {
+  .hero__lead {
+    font-size: var(--sizeLarge);
+  }
 }
 
 .filter {
@@ -610,6 +628,7 @@ small {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 44rem) {
@@ -617,6 +636,7 @@ small {
     align-items: flex-start;
     margin: 0 calc(-50% - (var(--halfSize) * 2));
     height: calc(100vw * var(--negativeRatio));
+    max-height: var(--contentSizeSmall);
     background-color: var(--whiteSmoke);
   }
 }
@@ -624,7 +644,6 @@ small {
 .figure__image__src {
   max-width: 100%;
   object-fit: cover;
-  border-radius: 4px;
 }
 
 .figure__image--fullwidth > .figure__image__src {
