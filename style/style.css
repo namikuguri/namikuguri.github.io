@@ -221,6 +221,7 @@ small {
 @media screen and (min-width: 44rem) {
   .hero__message__punctuation {
     visibility: visible;
+    letter-spacing: calc(var(--baseSize) * -1);
   }
 
   .hero__message__punctuation::after {
