@@ -628,14 +628,22 @@ small {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: var(--baseSize);
   border-radius: 4px;
+  background-color: var(--whiteSmoke);
+}
+
+.figure__image--fullwidth {
+  align-items: flex-start;
+  margin: 0 calc(var(--baseSize) * -1);
+  padding: 0;
+  height: calc(100vw * var(--negativeRatio));
+  border-radius: 0;
 }
 
 @media screen and (min-width: 44rem) {
   .figure__image--fullwidth {
-    align-items: flex-start;
     margin: 0 calc(-50% - (var(--halfSize) * 2));
-    height: calc(100vw * var(--negativeRatio));
     max-height: var(--contentSizeSmall);
     background-color: var(--whiteSmoke);
   }
@@ -654,6 +662,5 @@ small {
   margin-top: var(--baseSize);
   color: var(--gray);
   font-size: var(--sizeSmall);
-  font-style: italic;
   text-align: center;
 }
