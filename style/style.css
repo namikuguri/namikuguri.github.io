@@ -633,6 +633,12 @@ small {
   background-color: var(--whiteSmoke);
 }
 
+.figure__image--skelton {
+  padding: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
 .figure__image--fullwidth {
   align-items: flex-start;
   margin: 0 calc(var(--baseSize) * -1);
