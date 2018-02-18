@@ -75,11 +75,15 @@ a:visited {
 }
 
 h1 {
+  margin-top: var(--sizeXXLarge);
+  margin-bottom: var(--baseSize);
   font-size: var(--sizeXLarge);
   line-height: var(--lineHeightSmall);
 }
 
 h2 {
+  margin-top: var(--sizeXXLarge);
+  margin-bottom: var(--baseSize);
   font-size: var(--sizeXLarge);
   font-weight: var(--fontWeightNormal);
   line-height: var(--lineHeightSmall);
@@ -98,6 +102,21 @@ h4 {
 small {
   font-size: var(--sizeSmall);
   color: var(--gray);
+}
+
+p {
+  margin: 0;
+}
+p + p {
+  margin-top: var(--baseSize);
+}
+
+dt {
+  font-weight: var(--fontWeightBold);
+}
+
+dd + dt {
+  margin-top: var(--baseSize);
 }
 
 /* LAYOUT */
