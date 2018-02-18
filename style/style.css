@@ -258,7 +258,6 @@ dd p + p {
 
 @media screen and (min-width: 44rem) {
   .hero__lead {
-    margin-top: var(--halfSize);
     font-size: var(--sizeLarge);
   }
 }
@@ -659,6 +658,7 @@ dd p + p {
   padding: 0;
   background-color: transparent;
   text-align: center;
+  border-radius: 0;
 }
 
 .figure__image--fullwidth {
@@ -680,11 +680,6 @@ dd p + p {
 .figure__image__src {
   max-width: 100%;
   object-fit: cover;
-}
-
-.figure__image--skelton　> .figure__image__src,
-.figure__image--fullwidth > .figure__image__src {
-  border-radius: 0;
 }
 
 .figure__caption {
