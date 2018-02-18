@@ -30,8 +30,8 @@
 
   /* Font */
   --fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --fontWeightNormal: 400;
-  --fontWeightBold: 600;
+  --fontWeightNormal: normal;
+  --fontWeightBold: bold;
 
   /* Linne Height */
   --lineHeight: calc(1 + var(--ratio));
