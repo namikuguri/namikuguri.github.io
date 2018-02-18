@@ -104,18 +104,19 @@ small {
   color: var(--gray);
 }
 
-p {
-  margin: 0;
-}
-p + p {
-  margin-top: var(--baseSize);
-}
-
 dt {
   font-weight: var(--fontWeightBold);
 }
 
 dd + dt {
+  margin-top: var(--baseSize);
+}
+
+dd p {
+  margin: 0;
+}
+
+dd p + p {
   margin-top: var(--baseSize);
 }
 
