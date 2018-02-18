@@ -671,3 +671,7 @@ small {
   font-size: var(--sizeSmall);
   text-align: center;
 }
+
+.note {
+  display: block;
+}
