@@ -13,25 +13,25 @@
   </head>
   <body>
     <header id="header">
-      <a href="/" class="logo iconButton">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="iconButton__image iconButton__image--logo">
+      <a href="/" id="logo" class="iconButton iconButton--logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="iconButton__image">
           <path fill-rule="evenodd" d="M5.71428571,5.71428571 L8.57142857,5.71428571 L8.57142857,4.28571429 L10,4.28571429 L10,7.14285714 C10,8.72081357 8.72081357,10 7.14285714,10 C5.56490071,10 4.28571429,8.72081357 4.28571429,7.14285714 L4.28571429,5.71428571 L4.28571429,2.85714286 C4.28571429,2.06816464 3.64612107,1.42857143 2.85714286,1.42857143 C2.06816464,1.42857143 1.42857143,2.06816464 1.42857143,2.85714286 L1.42857143,5.71428571 L0,5.71428571 L0,2.85714286 C0,1.27918643 1.27918643,0 2.85714286,0 C4.43509929,0 5.71428571,1.27918643 5.71428571,2.85714286 L5.71428571,5.71428571 Z M5.71428571,7.14285714 C5.71428571,7.93183536 6.35387893,8.57142857 7.14285714,8.57142857 C7.93183536,8.57142857 8.57142857,7.93183536 8.57142857,7.14285714 L5.71428571,7.14285714 Z"/>
         </svg>
       </a>
-      <h1 class="pageTitle">bilibili calendarの紹介</h1>
-      <nav class="siteMenu">
-        <div class="siteMenu__button iconButton" id="_draw-handler">
+      <h1 id="title">bilibili calendarの紹介</h1>
+      <nav class="toggleMenu">
+        <div class="toggleMenu__button iconButton" id="_draw-handler">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="iconButton__image">
             <path fill-rule="evenodd" d="M0.625,1.25 L9.375,1.25 C9.72017797,1.25 10,1.52982203 10,1.875 C10,2.22017797 9.72017797,2.5 9.375,2.5 L0.625,2.5 C0.279822031,2.5 4.22721094e-17,2.22017797 0,1.875 C-4.22721094e-17,1.52982203 0.279822031,1.25 0.625,1.25 Z M0.625,4.375 L9.375,4.375 C9.72017797,4.375 10,4.65482203 10,5 C10,5.34517797 9.72017797,5.625 9.375,5.625 L0.625,5.625 C0.279822031,5.625 4.22721094e-17,5.34517797 0,5 C-4.22721094e-17,4.65482203 0.279822031,4.375 0.625,4.375 Z M0.625,7.5 L9.375,7.5 C9.72017797,7.5 10,7.77982203 10,8.125 C10,8.47017797 9.72017797,8.75 9.375,8.75 L0.625,8.75 C0.279822031,8.75 4.22721094e-17,8.47017797 0,8.125 C-4.22721094e-17,7.77982203 0.279822031,7.5 0.625,7.5 Z"/>
           </svg>
         </div>
-        <ul class="siteMenu__list" id="_drawer">
+        <ul class="toggleMenu__list" id="_drawer">
           <li class="is--active"><a href="/">showcase</a></li>
           <li><a href="/about">about</a></li>
           <li>
             <a href="http://namikuguri.hatenablog.com" target="_blank">
               blog
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="siteMenu__list__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="toggleMenu__list__icon">
                 <path fill-rule="evenodd" d="M8.09359217,3.09359217 L5.70082521,5.48635912 L4.375,4.16053391 L6.76776695,1.76776695 L5,0 L10,0 L10,5 L8.09359217,3.09359217 Z M3.75,0 L3.75,0.625 L1.25,0.625 C0.904822031,0.625 0.625,0.904822031 0.625,1.25 L0.625,8.75 C0.625,9.09517797 0.904822031,9.375 1.25,9.375 L8.75,9.375 C9.09517797,9.375 9.375,9.09517797 9.375,8.75 L9.375,6.25 L10,6.25 L10,8.75 C10,9.44035594 9.44035594,10 8.75,10 L1.25,10 C0.559644063,10 8.45442189e-17,9.44035594 0,8.75 L0,1.25 C-8.45442189e-17,0.559644063 0.559644063,1.26816328e-16 1.25,0 L3.75,0 Z"/>
               </svg>
             </a>
@@ -107,7 +107,7 @@
       </aside>
     </main>
     <footer id="footer">
-      <p class="byline">Made by <a href="https://twitter.com/namikuguri" class="byline__link">@namikuguri</a> / <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="byline__link">CC BY-NC</a></p>
+      <p id="byline">Made by <a href="https://twitter.com/namikuguri" class="shyLink">@namikuguri</a> / <a href="http://creativecommons.org/licenses/by-nc/4.0/" class="shyLink">CC BY-NC</a></p>
     </footer>
     <script type="text/javascript" src="/script/jquery.js"></script>
     <script type="text/javascript" src="/script/script.js"></script>

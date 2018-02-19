@@ -5,7 +5,7 @@
       $drawer = $('#_drawer');
 
   $handler.on('click', function() {
-    $handler.toggleClass('siteMenu__button--open');
-    $drawer.toggleClass('siteMenu__list--open');
+    $handler.toggleClass('toggleMenu__button--open');
+    $drawer.toggleClass('toggleMenu__list--open');
   });
 })();
