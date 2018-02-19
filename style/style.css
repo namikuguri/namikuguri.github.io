@@ -242,12 +242,12 @@ dd p + p {
   right: 0;
   width: 100vw;
   box-sizing: border-box;
-  padding: var(--size);
+  padding: 0 var(--size) var(--size) var(--size);
   background-color: var(--white);
   font-size: var(--sizeXLarge);
   box-shadow: 0 6px 6px -6px rgba(0,0,0,.6);
-  animation: globalMenuFadeIn .3s ease-in;
-  -webkit-animation: globalMenuFadeIn .3s ease-in;
+  animation: globalMenuFadeIn .2s ease-in;
+  -webkit-animation: globalMenuFadeIn .2s ease-in;
 }
 
 @keyframes globalMenuFadeIn {
