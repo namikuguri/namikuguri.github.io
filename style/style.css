@@ -127,19 +127,23 @@ dd p + p {
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: var(--white);
 }
 
 #title {
   margin: 0;
-  font-size: var(--sizeSmall);
+  font-size: var(--size);
   font-weight: var(--fontWeightNormal);
   color: var(--gray);
 }
 
+#nav {
+  margin-left: auto;
+}
+
 @media screen and (min-width: 44rem) {
   #header {
+    justify-content: space-between;
     position: relative;
     padding: var(--size);
   }
@@ -156,7 +160,7 @@ dd p + p {
   }
 
   #nav {
-    text-align: right;
+    margin-left: 0;
   }
 }
 
