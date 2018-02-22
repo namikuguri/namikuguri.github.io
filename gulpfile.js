@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 var haml = require('gulp-ruby-haml');
 var sass = require('gulp-sass');
+var imagemin = require('gulp-imagemin');
 
 // localhost:8080を立ち上げる
 gulp.task('connect', function() {
@@ -33,5 +34,13 @@ gulp.task('watch', function(){
   gulp.watch('./src/style/**/*.scss', ['sass']);
 });
 
+// 画像の軽量化
+gulp.task('imagemin', function(){
+    gulp.src('./src/image/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./image'))
+});
+
 // `gulp` でlocalhost:8080の立ち上げとSassの監視を開始
 gulp.task('default', ['connect', 'watch']);
+gulp.task('build', ['imagemin']);
