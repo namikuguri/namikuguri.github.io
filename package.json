@@ -4,6 +4,7 @@
     "gulp-connect": "^5.4.0",
     "gulp-ruby-haml": "0.0.9",
     "gulp-sass": "^3.1.0",
-    "gulp-imagemin": "^4.1.0"
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uglify": "^3.0.0"
   }
 }

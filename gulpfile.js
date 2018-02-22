@@ -3,6 +3,7 @@ var connect = require('gulp-connect');
 var haml = require('gulp-ruby-haml');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
+var uglify = require('gulp-uglify');
 
 // localhost:8080を立ち上げる
 gulp.task('connect', function() {
@@ -35,12 +36,19 @@ gulp.task('watch', function(){
 });
 
 // 画像の軽量化
-gulp.task('imagemin', function(){
+gulp.task('minify-image', function(){
     gulp.src('./src/image/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./image'))
 });
 
+// JavaScript の圧縮（軽量化）
+gulp.task('minify-js', function() {
+    return gulp.src("./src/script/*.js")
+        .pipe(uglify())
+        .pipe(gulp.dest('./script/'));
+});
+
 // `gulp` でlocalhost:8080の立ち上げとSassの監視を開始
 gulp.task('default', ['connect', 'watch']);
-gulp.task('build', ['imagemin']);
+gulp.task('build', ['minify-image', 'minify-js']);
