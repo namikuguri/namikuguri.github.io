@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var connect = require('gulp-connect');
+var fileinclude = require('gulp-file-include');
 var haml = require('gulp-ruby-haml');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
@@ -16,8 +17,18 @@ gulp.task('connect', function() {
 // Hamlのコンパイル
 gulp.task('haml', function() {
   gulp.src('./src/**/*.haml').
-       pipe(haml()).
-       pipe(gulp.dest('./'));
+    pipe(haml()).
+    pipe(gulp.dest('./'));
+});
+
+// ファイルの結合
+gulp.task('fileinclude', function() {
+  gulp.src(['./**/*.html', '!./**/*_.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
 });
 
 // Sassのコンパイル
@@ -29,24 +40,24 @@ gulp.task('sass', function(){
 
 // 自動監視
 gulp.task('watch', function(){
-  //Hamlの監視
+  // Hamlの監視
   gulp.watch('./src/**/*.haml', ['haml']);
-  //sassの監視
+  // Sassの監視
   gulp.watch('./src/style/**/*.scss', ['sass']);
 });
 
 // 画像の軽量化
 gulp.task('minify-image', function(){
-    gulp.src('./src/image/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./image'))
+  gulp.src('./src/image/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./image'))
 });
 
 // JavaScript の圧縮（軽量化）
 gulp.task('minify-js', function() {
-    return gulp.src("./src/script/*.js")
-        .pipe(uglify())
-        .pipe(gulp.dest('./script/'));
+  return gulp.src("./src/script/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest('./script/'));
 });
 
 // `gulp` でlocalhost:8080の立ち上げとSassの監視を開始

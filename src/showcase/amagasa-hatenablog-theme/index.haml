@@ -1,0 +1,107 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %title Amagasa Hatenablog Themeの紹介 | @namikuguri
+    %meta{:content => "はてなブログテーマAmagasa Hatenablog Themeの紹介", :name => "description"}/
+    %meta{:content => "ui, design, css, namikuguri", :name => "keywords"}/
+    %meta{:content => "#0000FF", :name => "theme-color"}/
+    %meta{:content => "Amagasa Hatenablog Themeの紹介", :property => "og:title"}/
+    %meta{:content => "はてなブログテーマAmagasa Hatenablog Themeの紹介", :property => "og:description"}/
+    %meta{:content => "article", :property => "og:type"}/
+    %meta{:content => "https://namikuguri.github.io/showcase/amagasa-hatenablog-theme/", :property => "og:url"}/
+    %meta{:content => "@namikuguri", :property => "og:site_name"}/
+    %meta{:content => "https://namikuguri.github.io/image/showcase/amagasa-hatenablog-theme/thumb.png", :property => "og:image"}/
+    %meta{:content => "ja_JP", :property => "og:locale"}/
+    %meta{:content => "summary", :name => "twitter:card"}/
+    %meta{:content => "@namikuguri", :name => "twitter:site"}/
+    %link{:href => "/image/apple-touch-icon.png", :rel => "apple-touch-icon-precomposed"}/
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "/style/normalize.css", :rel => "stylesheet"}/
+    %link{:href => "/style/style.css", :rel => "stylesheet"}/
+  %body
+    %header#header
+      %a#logo.iconButton.iconButton--logo{:href => "/"}
+        %svg.iconButton__image{:viewbox => "0 0 10 10", :xmlns => "http://www.w3.org/2000/svg"}
+          %path{:d => "M5.71428571,5.71428571 L8.57142857,5.71428571 L8.57142857,4.28571429 L10,4.28571429 L10,7.14285714 C10,8.72081357 8.72081357,10 7.14285714,10 C5.56490071,10 4.28571429,8.72081357 4.28571429,7.14285714 L4.28571429,5.71428571 L4.28571429,2.85714286 C4.28571429,2.06816464 3.64612107,1.42857143 2.85714286,1.42857143 C2.06816464,1.42857143 1.42857143,2.06816464 1.42857143,2.85714286 L1.42857143,5.71428571 L0,5.71428571 L0,2.85714286 C0,1.27918643 1.27918643,0 2.85714286,0 C4.43509929,0 5.71428571,1.27918643 5.71428571,2.85714286 L5.71428571,5.71428571 Z M5.71428571,7.14285714 C5.71428571,7.93183536 6.35387893,8.57142857 7.14285714,8.57142857 C7.93183536,8.57142857 8.57142857,7.93183536 8.57142857,7.14285714 L5.71428571,7.14285714 Z", "fill-rule" => "evenodd"}
+      %h1#title Amagasa Hatenablog Themeの紹介
+      %nav#nav.globalMenu
+        #_draw-handler.globalMenu__button.iconButton
+          %svg.iconButton__image{:viewbox => "0 0 10 10", :xmlns => "http://www.w3.org/2000/svg"}
+            %path{:d => "M0.625,1.25 L9.375,1.25 C9.72017797,1.25 10,1.52982203 10,1.875 C10,2.22017797 9.72017797,2.5 9.375,2.5 L0.625,2.5 C0.279822031,2.5 4.22721094e-17,2.22017797 0,1.875 C-4.22721094e-17,1.52982203 0.279822031,1.25 0.625,1.25 Z M0.625,4.375 L9.375,4.375 C9.72017797,4.375 10,4.65482203 10,5 C10,5.34517797 9.72017797,5.625 9.375,5.625 L0.625,5.625 C0.279822031,5.625 4.22721094e-17,5.34517797 0,5 C-4.22721094e-17,4.65482203 0.279822031,4.375 0.625,4.375 Z M0.625,7.5 L9.375,7.5 C9.72017797,7.5 10,7.77982203 10,8.125 C10,8.47017797 9.72017797,8.75 9.375,8.75 L0.625,8.75 C0.279822031,8.75 4.22721094e-17,8.47017797 0,8.125 C-4.22721094e-17,7.77982203 0.279822031,7.5 0.625,7.5 Z", "fill-rule" => "evenodd"}
+        %ul#_drawer.globalMenu__list
+          %li.is--active
+            %a{:href => "/"} showcase
+          %li
+            %a{:href => "/about"} about
+          %li
+            %a{:href => "http://namikuguri.hatenablog.com", :target => "_blank"}
+              blog
+              %svg.globalMenu__list__icon{:viewbox => "0 0 10 10", :xmlns => "http://www.w3.org/2000/svg"}
+                %path{:d => "M8.09359217,3.09359217 L5.70082521,5.48635912 L4.375,4.16053391 L6.76776695,1.76776695 L5,0 L10,0 L10,5 L8.09359217,3.09359217 Z M3.75,0 L3.75,0.625 L1.25,0.625 C0.904822031,0.625 0.625,0.904822031 0.625,1.25 L0.625,8.75 C0.625,9.09517797 0.904822031,9.375 1.25,9.375 L8.75,9.375 C9.09517797,9.375 9.375,9.09517797 9.375,8.75 L9.375,6.25 L10,6.25 L10,8.75 C10,9.44035594 9.44035594,10 8.75,10 L1.25,10 C0.559644063,10 8.45442189e-17,9.44035594 0,8.75 L0,1.25 C-8.45442189e-17,0.559644063 0.559644063,1.26816328e-16 1.25,0 L3.75,0 Z", "fill-rule" => "evenodd"}
+    %main#main{:role => "main"}
+      .hero
+        %h1.hero__message Amagasa Hatenablog Theme
+        %p.hero__lead はてなブログのテーマ制作
+      %article.article
+        %ul.menu.menu--meta
+          %li
+            %svg.menu__icon.menu__icon--link{:viewbox => "0 0 10 10", :xmlns => "http://www.w3.org/2000/svg"}
+              %path{:d => "M5.71809518,7.77274297 L4.21388156,9.27653991 C3.24885143,10.2411534 1.68755268,10.2411534 0.722939237,9.27653991 C0.256258,8.81069204 0,8.19067268 0,7.53148543 C0,6.87229819 0.256258,6.25227883 0.722522557,5.78601427 L2.75008586,3.75886765 C3.73136649,2.77758702 5.29766539,2.81633823 6.2406115,3.75886765 C6.42936739,3.94762355 6.57812203,4.16429698 6.69437566,4.39513752 L6.03060494,5.05849156 C5.9556026,4.80306692 5.8222651,4.56305943 5.62892573,4.37013674 C5.02557356,3.76678457 3.99137461,3.74095043 3.36260498,4.36972006 L3.3621883,4.37055342 L1.33420832,6.39770004 C0.709188807,7.02230287 0.709188807,8.03983464 1.33420832,8.66443747 C1.96631139,9.29654054 2.98342647,9.28445683 3.60177911,8.66443747 L4.61222733,7.65440594 C5.02599024,7.77274297 5.35850062,7.79399363 5.71809518,7.77274297 Z M5.78518061,0.72335622 L4.29596745,2.21340274 C4.64889514,2.19256875 4.98557231,2.21340274 5.40141863,2.33132309 L6.39853309,1.33587534 C7.02271925,0.71002247 8.04025101,0.71085583 8.66527053,1.33545866 C9.29737359,1.96797841 9.28445652,2.9850935 8.66527053,3.60302946 L6.65229102,5.61600897 L6.65104098,5.61684233 C6.0518556,6.21561102 5.03182376,6.26352918 4.38472022,5.61600897 C4.18763074,5.4185028 4.05762668,5.18182875 3.98637445,4.93140426 L3.95137336,4.95973848 L3.31927029,5.59100819 C3.4359406,5.82268209 3.58386189,6.03893884 3.77261778,6.22769473 C4.70806365,7.1631406 6.27436255,7.21689228 7.2635601,6.22769473 L9.27695629,4.21471522 C10.2411531,3.24968509 10.2419864,1.68880303 9.27653961,0.724189579 C8.3110928,-0.242923947 6.74854402,-0.23959051 5.78518061,0.72335622 Z"}
+            %a.menu__text{:href => "http://blog.hatena.ne.jp/-/store/theme/8599973812294768939"} http://blog.hatena.ne.jp/-/store/theme/8599973812294768939
+          %li
+            %svg.menu__icon{:viewbox => "0 0 10 10", :xmlns => "http://www.w3.org/2000/svg"}
+              %path{:d => "M5.625,4.375 L8.125,4.375 L8.125,5.625 L5.625,5.625 L4.375,5.625 L4.375,1.875 L5.625,1.875 L5.625,4.375 Z M5,10 C2.23857625,10 0,7.76142375 0,5 C0,2.23857625 2.23857625,0 5,0 C7.76142375,0 10,2.23857625 10,5 C10,7.76142375 7.76142375,10 5,10 Z M5,9.375 C7.41624578,9.375 9.375,7.41624578 9.375,5 C9.375,2.58375422 7.41624578,0.625 5,0.625 C2.58375422,0.625 0.625,2.58375422 0.625,5 C0.625,7.41624578 2.58375422,9.375 5,9.375 Z", "fill-rule" => "evenodd"}
+            %span.menu__text 2017年9月
+        .containerSmall
+          %p Amagasa Hatenablog Themeは、はてなブログ用に制作したデザインテーマです。
+          %p テーマを使う人に合わせてブログの印象を変えられるように、色やフォントの指定に気を配りました。テーマをカスタマイズしたとき、変更したデザインが目に見えやすい形でブログに反映されるようにしています。
+          %figure.figure
+            .figure__image.figure__image--fullwidth
+              %img.figure__image__src{:alt => "", :src => "/image/showcase/amagasa-hatenablog-theme/blog.png"}/
+            %figcaption.figure__caption ブログのトップ
+          %p メインカラーの領域を広くとっているので、たとえば色を変更するだけでブログの印象を大きく変えることができます。
+          %figure.figure
+            .figure__image.figure__image--skelton
+              %img.figure__image__src{:alt => "", :src => "/image/showcase/amagasa-hatenablog-theme/blog-custom-color.png"}/
+            %figcaption.figure__caption メインカラーのカスタマイズ
+          %p 記事ページではタイトルと本文など、情報の違いがはっきりと区別できるデザインにしました。
+          %figure.figure
+            .figure__image
+              %img.figure__image__src{:alt => "", :src => "/image/showcase/amagasa-hatenablog-theme/blog-article.png"}/
+            %figcaption.figure__caption 記事ページ
+          %p
+            また、テーマの詳細を伝えるために
+            %a{:href => "https://namikuguri.github.io/amagasa-hatenablog-theme/"}> 紹介サイト
+            もつくりました。テーマの概要やカスタマイズ方法、変更履歴を掲載しています。
+          %figure.figure
+            .figure__image
+              %img.figure__image__src{:alt => "", :src => "/image/showcase/amagasa-hatenablog-theme/site.png"}/
+            %figcaption.figure__caption 紹介サイト
+          %p 公開して半年、いまでは100以上のブログでこのテーマは使われています。
+          %p
+            過去に
+            %a{:href => "http://thleap.net/work/chroma-blog/"}> はてなブログのテーマを制作した
+            ことはありましたが、それはあくまで自分だけが使う個人用のテーマ。今回のように自分以外にも使われるテーマづくりとは勝手が違いました。人に使ってもらうにはデザインの抜け漏れがあってはダメですし、各ブラウザのサポートも必要になります。
+          %p つくるのは大変でしたが、その分公開したテーマを使ってもらえるのはすごく嬉しいと感じています。
+      %aside#banner.container
+        %a.banner{:href => "http://namikuguri.hatenablog.com", :target => "_blank"}
+          .banner__thumb
+            %img.banner__thumb__image{:alt => "", :src => "/image/banner.png"}/
+          .banner__text
+            %h1.banner__text__title 2月はCSSをテーマにブログ更新中！
+            %p.banner__text__description CSSセレクターやGrid Layoutについて、はてなブログで記事を更新中です。
+            %p.banner__text__action
+              ブログを開く
+              %svg.banner__text__action__icon{:viewbox => "0 0 10 10", :xmlns => "http://www.w3.org/2000/svg"}
+                %path{:d => "M8.09359217,3.09359217 L5.70082521,5.48635912 L4.375,4.16053391 L6.76776695,1.76776695 L5,0 L10,0 L10,5 L8.09359217,3.09359217 Z M3.75,0 L3.75,0.625 L1.25,0.625 C0.904822031,0.625 0.625,0.904822031 0.625,1.25 L0.625,8.75 C0.625,9.09517797 0.904822031,9.375 1.25,9.375 L8.75,9.375 C9.09517797,9.375 9.375,9.09517797 9.375,8.75 L9.375,6.25 L10,6.25 L10,8.75 C10,9.44035594 9.44035594,10 8.75,10 L1.25,10 C0.559644063,10 8.45442189e-17,9.44035594 0,8.75 L0,1.25 C-8.45442189e-17,0.559644063 0.559644063,1.26816328e-16 1.25,0 L3.75,0 Z", "fill-rule" => "evenodd"}
+    %footer#footer
+      %p#byline
+        Made by
+        %a.shyLink{:href => "https://twitter.com/namikuguri"} @namikuguri
+        \/
+        %a.shyLink{:href => "http://creativecommons.org/licenses/by-nc/4.0/"} CC BY-NC
+    %script{:src => "/script/jquery.js", :type => "text/javascript"}
+    %script{:src => "/script/script.js", :type => "text/javascript"}
