@@ -11,11 +11,9 @@
   --aqua: #2BFFC8;
   --pink: #FFA1EC;
   --purple: #A8198B;
-  --whiteSmoke: #F5F5F7;
+  --whiteSmoke: #EDEDF0;
   --gray: #515961;
   --darkBlue: #314152;
-  --bannerTextColor: var(--white);
-  --bannerBGColor: #264DE4;
 
   // Size
   --size: 1rem;
@@ -229,13 +227,6 @@ dd p + p {
   fill: inherit;
 }
 
-@media screen and (min-width: 44rem) {
-  .iconButton__image {
-    width: var(--sizeXLarge);
-    height: var(--sizeXLarge);
-  }
-}
-
 .globalMenu {
   position: relative;
 }
@@ -333,13 +324,14 @@ dd p + p {
   .globalMenu__list li:hover {
     padding: 0 var(--sizeHalf);
     border-radius: 4px;
-    background-color: var(--aqua);
+    background-color: var(--whiteSmoke);
     transition: .4s;
   }
 
   .globalMenu__list li.is--active {
     border-radius: 4px;
-    background-color: var(--aqua);
+    background-color: var(--whiteSmoke);
+    font-weight: var(--fontWeightBold);
   }
 
   .globalMenu__list__icon {
@@ -594,11 +586,10 @@ dd p + p {
 }
 
 .banner {
-  display: block;
-  padding: var(--size);
-  background-color: var(--bannerBGColor);
+  display: flex;
+  padding-top: var(--sizeXLarge);
+  border-top: 1px solid var(--whiteSmoke);
   line-height: var(--lineHeightSmall);
-  color: inherit;
   cursor: pointer;
 }
 
@@ -613,8 +604,9 @@ dd p + p {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: calc(100vw * var(--ratioNeg));
   overflow: hidden;
+  width: calc(var(--size) * 8);
+  height: calc(var(--size) * 8);
 }
 
 .banner__thumb__image {
@@ -623,18 +615,16 @@ dd p + p {
   object-fit: cover;
 }
 
-.banner__text {
-  color: var(--white);
-}
-
 .banner__text__title {
   margin: var(--sizeHalf) 0;
   font-size: var(--sizeLarge);
+  color: var(--black);
 }
 
 .banner__text__description {
   margin: var(--sizeHalf) 0;
   font-size: var(--sizeSmall);
+  color: var(--black);
 }
 
 .banner__text__action {
@@ -642,24 +632,20 @@ dd p + p {
   align-items: center;
   margin: 0;
   font-size: var(--sizeSmall);
-  color: var(--white);
 }
 
 .banner__text__action__icon {
   margin-left: var(--sizeQuarter);
   width: var(--sizeSmall);
   height: var(--sizeSmall);
-  fill: var(--white);
+  fill: var(--blue);
 }
 
 @media screen and (min-width: 44rem) {
   .banner {
-    display: flex;
-  }
-
-  .banner__thumb {
-    width: calc(var(--size) * 12);
-    height: 100%;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .banner__text {
