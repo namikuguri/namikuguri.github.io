@@ -71,7 +71,7 @@ img {
     --sizeContent: calc(var(--size) * 40);
     --ratio: .618;
     --ratioNeg: calc(1 - var(--ratio));
-    --fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "M PLUS 1p", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --fontWeightNormal: normal;
     --fontWeightBold: bold;
     --lineHeight: calc(1 + var(--ratio));
