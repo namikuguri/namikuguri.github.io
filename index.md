@@ -7,6 +7,8 @@
   {% endif %}
   {{ page.date }}
   {{ page.name }}
+  {{ page.url }}
+  {{ page.title }}
   <ol class="showcase">
   {% if site.environment == "production" %}
     {% for post in site.posts %}
