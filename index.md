@@ -1,15 +1,8 @@
-<section class="container">
-  <ol class="showcase">
-    {% for post in site.posts %}
-      <li>
-        <a class="card" href="{{ page.url}}">
-          <h2 class="card__title">{{ page.title }}</h2>
-          <time class="card__date" datetime="page.date">{{ page.month }}月{{ page.day }}日</time>
-        </a>
-      </li>
-    {% endfor %}
-  </ol>
+---
+title: なみく
+---
 
+<section class="container">
   <ol class="showcase">
     <li>
       <a class="card" href="/article/2021-02-28">
