@@ -1,7 +1,3 @@
----
-title: なみく
----
-
 <section class="container">
   <div>{{ site.posts }}</div>
   <ol class="showcase">
