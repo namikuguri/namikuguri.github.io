@@ -3,11 +3,11 @@ title: なみく
 ---
 
 <section class="container">
-  <h2>反映されたんか？日付？</h2>
+  <h2>反映されたんか？日付？まさか</h2>
   <ol class="showcase">
     {% for post in site.posts %}
       <li>
-        <a class="card" href="{{ post.url}}">
+        <a class="card" href="{{ post.url }}">
           <h2 class="card__title">{{ post.title }}</h2>
         </a>
       </li>
