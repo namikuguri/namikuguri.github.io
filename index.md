@@ -3,13 +3,12 @@ title: なみく
 ---
 
 <section class="container">
-  <h2>反映されたんか？</h2>
+  <h2>反映されたんか？日付？</h2>
   <ol class="showcase">
     {% for post in site.posts %}
       <li>
         <a class="card" href="{{ post.url}}">
           <h2 class="card__title">{{ post.title }}</h2>
-          <time class="card__date" datetime="page.date">{{ post.month }}月{{ post.day }}日</time>
         </a>
       </li>
     {% endfor %}
