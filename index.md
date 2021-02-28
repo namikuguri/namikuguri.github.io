@@ -3,6 +3,7 @@ title: なみく
 ---
 
 <section class="container">
+  <h2>反映されたんか？</h2>
   <ol class="showcase">
     {% for post in site.posts %}
       <li>
