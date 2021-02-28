@@ -1,6 +1,7 @@
 <section class="container">
   <div>{{ site.posts }}</div>
   <ol class="showcase">
+  {% if site.environment == "production" %}
     {% for post in site.posts %}
       <li>
         <a class="card" href="{{ post.url }}">
@@ -8,6 +9,16 @@
         </a>
       </li>
     {% endfor %}
+  {% endif %}
+  {% if site.environment == "development" %}
+    {% for post in site.posts %}
+      <li>
+        <a class="card" href="{{ post.url }}">
+          <h2 class="card__title">{{ post.title }}</h2>
+        </a>
+      </li>
+    {% endfor %}
+  {% endif %}
   </ol>
   <ol class="showcase">
     <li>
