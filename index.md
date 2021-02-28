@@ -2,11 +2,11 @@
   <div>{{ site.posts }}</div>
   <div>{{ site.time }}</div>
   <div>{{ site.url }}</div>
-  <div>{{ site.url }}</div>
-  {% if page.title == "" %}
+  {% if site.url == "https://namikuguri.github.io" %}
     <p>ねむい</p>
   {% endif %}
   {{ page.date }}
+  {{ page.name }}
   <ol class="showcase">
   {% if site.environment == "production" %}
     {% for post in site.posts %}
