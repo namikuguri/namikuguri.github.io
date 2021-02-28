@@ -1,10 +1,36 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "ja" }}">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ '/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta content="width=device-width" name="viewport">
+    <title>@namiku</title>
+    <meta content="@namikuのブログ" name="description">
+    <meta content="ui, design, css, namiku" name="keywords">
+    <meta content="#0000FF" name="theme-color">
+    <meta content="@namiku" property="og:title">
+    <meta content="@namikuのブログ" property="og:description">
+    <meta content="website" property="og:type">
+    <meta content="https://namikuguri.github.io" property="og:url">
+    <meta content="@namiku" property="og:site_name">
+    <meta content="/ogp.png" property="og:image">
+    <meta content="ja_JP" property="og:locale">
+    <meta content="summary" name="twitter:card">
+    <meta content="@namiku" name="twitter:site">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="{{ '/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    {{ content }}
+    <header id="header">
+      <h1 class="title"><a href="/" class="shyLink">@namiku</a></h1>
+    </header>
+    <main id="main" role="main">
+      {{ content }}
+    </main>
+    <footer id="footer">
+      <p>Made by <a href="https://twitter.com/namikuguri">@namiku</a> / <a class="shyLink" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></p>
+    </footer>
   </body>
 </html>
