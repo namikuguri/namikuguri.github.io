@@ -1,6 +1,7 @@
 <ol class="showcase">
   {% for post in site.posts %}
     <li>
+
       <a class="card" href="{{ post.url }}">
         <h2 class="card__title">{{ post.title }}</h2>
         {% if (post.date | date: "%Y") == ("today" | date: "%Y") %}
