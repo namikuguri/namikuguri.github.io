@@ -11,6 +11,11 @@
   {{ page.url }}
   {{ page.title }}
   <ol class="showcase">
+      <li>
+        <a class="card" href="{{ page.url }}">
+          <h2 class="card__title">{{ page.title }}</h2>
+        </a>
+      </li>
   {% if site.environment == "production" %}
     {% for post in site.posts %}
       <li>
