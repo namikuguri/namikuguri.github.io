@@ -1,4 +1,5 @@
 <ol class="showcase">
+  {{ site.posts }}
   <li>
     <a class="card" href="/article/2021-02-28">
       <h2 class="card__title">作品集からブログに</h2>
