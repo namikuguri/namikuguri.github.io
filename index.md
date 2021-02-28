@@ -3,16 +3,6 @@ title: なみく
 ---
 
 <section class="container">
-  <h2>反映されたんか？日付？まさか</h2>
-  <ol class="showcase">
-    {% for post in site.posts %}
-      <li>
-        <a class="card" href="{{ post.url }}">
-          <h2 class="card__title">{{ post.title }}</h2>
-        </a>
-      </li>
-    {% endfor %}
-  </ol>
   <ol class="showcase">
     <li>
       <a class="card" href="/article/2021-02-28">
