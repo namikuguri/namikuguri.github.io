@@ -1,5 +1,6 @@
 ---
 title: corocoro dice
+date: 2016-10-01
 ---
 
 <p>corocoro diceはサイコロのデザインアイデア集です。全部で108のアイデアを考えました。</p>
