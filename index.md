@@ -1,4 +1,5 @@
 <section class="container">
+  <h2>どうしようかな</h2>
   <div>{{ site.posts }}</div>
   <div>{{ site.time }}</div>
   <div>{{ site.url }}</div>
