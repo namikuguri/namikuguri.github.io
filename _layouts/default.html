@@ -3,16 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width" name="viewport">
-    <title>@{{ site.author }}</title>
-    <meta content="{{ site.author }}のブログ" name="description">
-    <meta content="ui, design, {{ site.author }}, {{ site.author_long }}" name="keywords">
+    {% if page.url == "/" %}
+      <title>@{{ site.author }}</title>
+      <meta content="{{ site.author }}のブログ" name="description">
+      <meta content="ui, design, {{ site.author }}" name="keywords">
+      <meta content="@{{ site.author }}" property="og:title">
+      <meta content="@{{ site.author }}のブログ" property="og:description">
+    {% else %}
+      <title>{{ page.title }} | @{{ site.author }}</title>
+      <meta content="{{ page.title }}" name="description">
+      <meta content="ui, design, {{ site.author }}" name="keywords">
+      <meta content="{{ page.title }}" property="og:title">
+      <meta content="{{ page.title }}" property="og:description">
+    {% endif %}
     <meta content="#0000FF" name="theme-color">
-    <meta content="@{{ site.author }}" property="og:title">
-    <meta content="@{{ site.author }}のブログ" property="og:description">
+    <meta content="{{ page.url }}" property="og:url">
+    <meta content="{{ page.url }}/cover.png" property="og:image">
     <meta content="website" property="og:type">
-    <meta content="https://namikuguri.github.io" property="og:url">
     <meta content="@{{ site.author }}" property="og:site_name">
-    <meta content="/ogp.png" property="og:image">
     <meta content="ja_JP" property="og:locale">
     <meta content="summary" name="twitter:card">
     <meta content="@{{ site.author }}" name="twitter:site">
@@ -32,13 +40,9 @@
       {% endif %}
 
       {% if page.url == "/" %}
-        <section>
-          {{ content }}
-        </section>
+        <section>{{ content }}</section>
       {% else %}
-        <article>
-          {{ content }}
-        </article>
+        <article>{{ content }}</article>
       {% endif %}
     </main>
     <footer id="footer">
