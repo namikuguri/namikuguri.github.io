@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width" name="viewport">
+    <meta content="#0000FF" name="theme-color">
     {% if page.url == "/" %}
       <title>@{{ site.author }}</title>
-      <meta content="{{ site.author }}のブログ" name="description">
+      <meta content="@{{ site.author }}のブログ" name="description">
       <meta content="ui, design, {{ site.author }}" name="keywords">
       <meta content="@{{ site.author }}" property="og:title">
       <meta content="@{{ site.author }}のブログ" property="og:description">
@@ -16,7 +17,6 @@
       <meta content="{{ page.title }}" property="og:title">
       <meta content="{{ page.title }}" property="og:description">
     {% endif %}
-    <meta content="#0000FF" name="theme-color">
     <meta content="{{ page.url }}" property="og:url">
     <meta content="{{ page.url }}/cover.png" property="og:image">
     <meta content="website" property="og:type">
