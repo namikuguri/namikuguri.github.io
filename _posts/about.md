@@ -1,3 +1,7 @@
+---
+title: about
+---
+
 <h2 class="title">about</h2>
 <article class="article">
     <h3 id="summary">概要</h3>

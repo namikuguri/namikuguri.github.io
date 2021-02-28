@@ -1,4 +1,7 @@
-<h2 class="title">Amagasa Hatenablog Theme</h2>
+---
+title: Amagasa Hatenablog Theme
+---
+
 <article class="article">
     <p>Amagasa Hatenablog Themeは、はてなブログ用に制作したデザインテーマです。</p>
     <p>テーマを使う人に合わせてブログの印象を変えられるように、色やフォントの指定に気を配りました。テーマをカスタマイズしたとき、変更したデザインが目に見えやすい形でブログに反映されるようにしています。</p>

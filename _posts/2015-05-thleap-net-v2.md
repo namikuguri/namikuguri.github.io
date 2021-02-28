@@ -1,4 +1,7 @@
-<h2 class="title">thleap.net v2</h2>
+---
+title: thleap.net v2
+---
+
 <article class="article">
     <p>このサイトではブログの更新と作品の展示をおこないました。</p>
     <figure class="figure">
