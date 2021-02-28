@@ -1,16 +1,14 @@
 <section class="container">
   <div>{{ site.posts }}</div>
+  <div>{{ site.time }}</div>
+  <div>{{ site.url }}</div>
+  <div>{{ site.url }}</div>
+  {% if page.title == "" %}
+    <p>ねむい</p>
+  {% endif %}
+  {{ page.date }}
   <ol class="showcase">
   {% if site.environment == "production" %}
-    {% for post in site.posts %}
-      <li>
-        <a class="card" href="{{ post.url }}">
-          <h2 class="card__title">{{ post.title }}</h2>
-        </a>
-      </li>
-    {% endfor %}
-  {% endif %}
-  {% if site.environment == "development" %}
     {% for post in site.posts %}
       <li>
         <a class="card" href="{{ post.url }}">
