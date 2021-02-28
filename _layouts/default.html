@@ -10,15 +10,17 @@
       <meta content="ui, design, {{ site.author }}" name="keywords">
       <meta content="@{{ site.author }}" property="og:title">
       <meta content="@{{ site.author }}のブログ" property="og:description">
+      <meta content="{{ site.url }}" property="og:url">
+      <meta content="{{ site.url }}/cover.png" property="og:image">
     {% else %}
       <title>{{ page.title }} | @{{ site.author }}</title>
       <meta content="{{ page.title }}" name="description">
       <meta content="ui, design, {{ site.author }}" name="keywords">
       <meta content="{{ page.title }}" property="og:title">
       <meta content="{{ page.title }}" property="og:description">
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+      <meta content="{{ site.url }}{{ page.url }}/cover.png" property="og:image">
     {% endif %}
-    <meta content="{{ page.url }}" property="og:url">
-    <meta content="{{ page.url }}/cover.png" property="og:image">
     <meta content="website" property="og:type">
     <meta content="@{{ site.author }}" property="og:site_name">
     <meta content="ja_JP" property="og:locale">
