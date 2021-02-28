@@ -16,7 +16,6 @@
       <a class="card" href="/article/2016-10-corocoro-dice">
         <h2 class="card__title">corocoro dice</h2>
         <time class="card__date" datetime="2016-10-01">2016年10月</time>
-        </div>
       </a>
     </li>
     <li>

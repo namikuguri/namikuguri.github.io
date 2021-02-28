@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width" name="viewport">
-    <title>{{ author }}</title>
-    <meta content="{{ author }}のブログ" name="description">
+    <title>{{ site.author }}</title>
+    <meta content="{{ site.author }}のブログ" name="description">
     <meta content="ui, design, namiku, namikuguri" name="keywords">
     <meta content="#0000FF" name="theme-color">
-    <meta content="{{ author }}" property="og:title">
-    <meta content="{{ author }}のブログ" property="og:description">
+    <meta content="{{ site.author }}" property="og:title">
+    <meta content="{{ site.author }}のブログ" property="og:description">
     <meta content="website" property="og:type">
     <meta content="https://namikuguri.github.io" property="og:url">
-    <meta content="{{ author }}" property="og:site_name">
+    <meta content="{{ site.author }}" property="og:site_name">
     <meta content="/ogp.png" property="og:image">
     <meta content="ja_JP" property="og:locale">
     <meta content="summary" name="twitter:card">
-    <meta content="{{ author }}" name="twitter:site">
+    <meta content="{{ site.author }}" name="twitter:site">
     <link href="/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
     <link href="/favicon.ico" rel="shortcut icon">
     <link href="{{ '/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
@@ -24,13 +24,13 @@
   </head>
   <body>
     <header id="header">
-      <h1 class="title"><a href="/" class="shyLink">{{ author }}</a></h1>
+      <h1 class="title"><a href="/" class="shyLink">{{ site.author }}</a></h1>
     </header>
     <main id="main" role="main">
       {{ content }}
     </main>
     <footer id="footer">
-      <p>Made by <a href="https://twitter.com/namikuguri">{{ author }}</a> / <a class="shyLink" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></p>
+      <p>Made by <a href="https://twitter.com/namikuguri">{{ site.author }}</a> / <a class="shyLink" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></p>
     </footer>
   </body>
 </html>
