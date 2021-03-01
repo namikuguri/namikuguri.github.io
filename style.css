@@ -265,6 +265,7 @@ dd p+p {
     border-radius: 0
 }
 
+img,
 .figure__image__src {
     max-width: 100%;
     object-fit: cover
