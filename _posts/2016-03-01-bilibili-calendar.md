@@ -1,6 +1,5 @@
 ---
 title: bilibili calendar
-date: 2016-03-01
 ---
 
 <p>bilibili calendarは日付入り画像のデザインアイデア集です。10月23日〜3月10日まで、全部で140のアイデアを考えました。</p>

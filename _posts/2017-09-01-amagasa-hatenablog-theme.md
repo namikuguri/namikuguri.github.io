@@ -1,6 +1,5 @@
 ---
 title: Amagasa Hatenablog Theme
-date: 2017-09-01
 ---
 
 <p>Amagasa Hatenablog Themeは、はてなブログ用に制作したデザインテーマです。</p>
