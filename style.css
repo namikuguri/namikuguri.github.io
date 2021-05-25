@@ -103,7 +103,7 @@ a:hover, a:active, a:visited {
     text-decoration: underline
 }
 p {
-    margin: var(--sizeXLarge);
+    margin: var(--sizeXLarge) 0;
 }
 h1,
 h2,
