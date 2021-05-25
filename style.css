@@ -87,7 +87,7 @@ img {
 html {
     font-family: var(--fontFamily);
     font-size: 112.5%;
-    line-height: var(--lineHeight)
+    line-height: var(--lineHeight);
     letter-spacing: 1px;
     font-feature-settings: "palt";
 }
